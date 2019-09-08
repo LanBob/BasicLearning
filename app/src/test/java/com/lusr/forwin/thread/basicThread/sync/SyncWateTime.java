@@ -24,9 +24,6 @@ public class SyncWateTime {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            synchronized (this){
-
-            }
             System.out.println("string = "+string);
             System.out.println("string1 = " + string1);
         }

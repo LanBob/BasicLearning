@@ -17,13 +17,13 @@ public class SyncThread1 {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                output.sayName("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+                output.sayName("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
             }
         }).start();
     }
 
     static class Output {
-        synchronized void sayName(String name) {
+         void sayName(String name) {
                 for (int i = 0; i < name.length(); i++) {
                     System.out.print(name.charAt(i));
                 }

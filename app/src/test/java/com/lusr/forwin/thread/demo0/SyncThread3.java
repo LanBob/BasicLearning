@@ -32,12 +32,12 @@ public class SyncThread3 {
         volatile int i = 0;
         volatile int j = 0;
 
-        void one() {
+        synchronized void one() {
             ++i;
             ++j;
         }
 
-        void say() {
+        synchronized void say() {
             System.out.println("i = " + i + ", j = " + j);
         }
     }

@@ -22,10 +22,13 @@ public class SyncThread {
         }
     }
 
+    /**
+     * 使用synchronized属于非公平锁，不会按照加锁的先后顺序去分配锁，而是抢占式
+     */
     private static class Count {
         private int count;
 
-        void setCount() {
+        synchronized void setCount() {
 //            int count = 0;
             for (int i = 1; i <= 100; i++) {
                 count += i;
