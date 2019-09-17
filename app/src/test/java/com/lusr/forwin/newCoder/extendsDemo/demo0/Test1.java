@@ -3,6 +3,7 @@ package com.lusr.forwin.newCoder.extendsDemo.demo0;
 class A1{
     int a = 1;
     public int getA() {
+        System.out.println("父类");
         System.out.println(this);
         return this.a;
     }
@@ -10,6 +11,11 @@ class A1{
 
 class B1 extends A1 {
     int a = 2;
+    public int getA() {
+        System.out.println("子类");
+        System.out.println(this);
+        return this.a;
+    }
 }
 
 public class Test1 {

@@ -1,5 +1,7 @@
 package com.lusr.forwin.base;
 
+import java.util.Arrays;
+
 /**
  * Created by Lusq
  * Date: 2019/8/30
@@ -7,6 +9,7 @@ package com.lusr.forwin.base;
  */
 public class BitCaculate {
     public static void main(String[] args) {
+
         //名称是，无符号右移，在值为正数的时候，与 >> 结果一致。
         //当值为负数的时候，>> 在最高位补1，而 >>> 在最高位补0，导致出现正数
         System.out.println(-15 >> 2);
