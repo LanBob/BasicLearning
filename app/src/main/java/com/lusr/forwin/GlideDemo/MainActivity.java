@@ -1,5 +1,6 @@
 package com.lusr.forwin.GlideDemo;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
@@ -37,12 +38,18 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.showImage:
                 String url = "http://cn.bing.com/az/hprichbg/rb/Dongdaemun_ZH-CN10736487148_1920x1080.jpg";
+                String gifUrl = "http://p1.pstatp.com/large/166200019850062839d3";
                 Glide.with(this)
-                        .load(url)
+                        .load(gifUrl)
                         .placeholder(R.drawable.place)
                         .into(imageView);
                 break;
         }
+    }
+
+    <A, X extends Activity> X get(X x) {
+
+        return null;
     }
 
     @Override
