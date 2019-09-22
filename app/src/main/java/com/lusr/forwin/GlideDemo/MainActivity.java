@@ -47,11 +47,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    <A, X extends Activity> X get(X x) {
-
-        return null;
-    }
-
     @Override
     protected void onStart() {
         Log.d(TAG, "onStart: ");
