@@ -38,7 +38,7 @@ public class ThreadVarShared extends Thread {
     @Override
     public void run() {
         while (count > 0) {
-            System.out.println("count = " + count--);
+            System.out.println("count = " + getName() + " : " + count--);
         }
     }
 
